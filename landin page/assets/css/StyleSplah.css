@@ -1,0 +1,52 @@
+.body body{
+  display: grid;
+  place-items: center;
+}
+.contenedor{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo{
+  width: 700px;
+  height: 250px;
+
+
+} 
+ .loading svg polyline {
+    fill: none;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .loading{
+    margin-left: 150px;
+  }
+  .loading svg polyline#back {
+    fill: none;
+    stroke: #0d7dfd33;
+  }
+  
+  .loading svg polyline#front {
+  
+    fill: none;
+    stroke: #d8ff4d;
+    stroke-dasharray: 250, 260;
+    stroke-dashoffset: 340;
+    animation: dash_682 1.1s linear infinite;
+  }
+  
+  @keyframes dash_682 {
+    72.5% {
+      opacity: 0;
+    }
+  
+    to {
+      stroke-dashoffset: 0;
+    }
+  }  
+  
+
+  
